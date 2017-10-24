@@ -2,10 +2,7 @@ package ffdebugtest;
 import java.util.Scanner;
 
 public class FFdebugTest {
-    
-    String monString;
-    private int monInt;
-    
+
     public static void main(String[] args) {
         int[] myArray = new int[3];
         FFdebugTest.getValue(myArray);
