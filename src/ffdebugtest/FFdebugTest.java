@@ -6,7 +6,8 @@ public class FFdebugTest {
     public static void main(String[] args) {
         int[] myArray = new int[3];
         FFdebugTest.getValue(myArray);
-        System.out.println("La plus grande valeur est : " + findMax(myArray));     
+        System.out.println("La plus grande valeur est : " + FFdebugCalc.findMax(myArray));
+        System.out.println("La plus petite valeur est : " + FFdebugCalc.findMin(myArray));
     }
     
     public static void getValue(int[] array) {
@@ -15,25 +16,5 @@ public class FFdebugTest {
             System.out.println("Entrer un nombre : ");
             array[i] = scan.nextInt();
         }
-    }
-    
-    public static int findMax(int[] array) {
-        int max = array[0];
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > max) {
-                max = array[i];
-            }   
-        }
-        return max;
-    }  
-    
-    public static int findMin(int[] array) {
-        int min = array[0];
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > min) {
-                min = array[i];
-            }   
-        }
-        return min;
     }
 }
