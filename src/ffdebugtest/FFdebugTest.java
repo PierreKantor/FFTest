@@ -8,11 +8,14 @@ public class FFdebugTest {
     private String myString;
 
     public FFdebugTest() {
-        this.myArray = new int[3];
+    }
+
+    public FFdebugTest(int[] myArray) {
+        this.myArray = myArray;
     }
 
     public static void main(String[] args) {
-        FFdebugTest debug = new FFdebugTest();
+        FFdebugTest debug = new FFdebugTest(new int[3]);
         FFdebugTest.getValue(debug.myArray);
         System.out.println("La plus grande valeur est : " + FFdebugCalc.findMax(debug.myArray));
         System.out.println("La plus petite valeur est : " + FFdebugCalc.findMin(debug.myArray));
