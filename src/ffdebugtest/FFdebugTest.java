@@ -2,12 +2,20 @@ package ffdebugtest;
 import java.util.Scanner;
 
 public class FFdebugTest {
+    private int[] myArray;
+    private int myInt;
+    private boolean myBoolean;
+    private String myString;
+
+    public FFdebugTest() {
+        this.myArray = new int[3];
+    }
 
     public static void main(String[] args) {
-        int[] myArray = new int[3];
-        FFdebugTest.getValue(myArray);
-        System.out.println("La plus grande valeur est : " + FFdebugCalc.findMax(myArray));
-        System.out.println("La plus petite valeur est : " + FFdebugCalc.findMin(myArray));
+        FFdebugTest debug = new FFdebugTest();
+        FFdebugTest.getValue(debug.myArray);
+        System.out.println("La plus grande valeur est : " + FFdebugCalc.findMax(debug.myArray));
+        System.out.println("La plus petite valeur est : " + FFdebugCalc.findMin(debug.myArray));
     }
     
     public static void getValue(int[] array) {
