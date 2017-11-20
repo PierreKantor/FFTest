@@ -40,7 +40,7 @@ public class FFdebugTest {
     
     /**
      * Permet l'entrée des valeurs d'integer dans myArray par l'utilisateur.
-     * @param array 
+     * @param array liste d'entiers.
      */
     public static void getValue(int[] array) {
         Scanner scan = new Scanner(System.in);
