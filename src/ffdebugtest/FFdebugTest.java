@@ -34,8 +34,7 @@ public class FFdebugTest {
         FFdebugTest.getValue(debug.myArray);
         System.out.println("La plus grande valeur est : " +
                 FFdebugCalc.findMax(debug.myArray));
-        System.out.println("La plus petite valeur est : " +
-                FFdebugCalc.findMin(debug.myArray));
+  
     }
     
     /**
