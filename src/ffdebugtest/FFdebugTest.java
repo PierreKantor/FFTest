@@ -1,11 +1,14 @@
 package ffdebugtest;
+
 import java.util.Scanner;
 
 /**
  * Classe debug pour présenter NetBeans aux M1.
+ *
  * @author Pierre
  */
 public class FFdebugTest {
+
     private int[] myArray;
     private int myInt;
     private boolean myBoolean;
@@ -19,6 +22,7 @@ public class FFdebugTest {
 
     /**
      * Second constructeur avec myArray en paramètre
+     *
      * @param myArray liste de trois entiers.
      */
     public FFdebugTest(int[] myArray) {
@@ -27,18 +31,20 @@ public class FFdebugTest {
 
     /**
      * Exécute les méthodes du programme.
+     *
      * @param args the command line argument
      */
     public static void main(String[] args) {
         FFdebugTest debug = new FFdebugTest(new int[3]);
         FFdebugTest.getValue(debug.myArray);
-        System.out.println("La plus grande valeur est : " +
-                FFdebugCalc.findMax(debug.myArray));
-  
+        System.out.println("La plus grande valeur est : "
+                + FFdebugCalc.findMax(debug.myArray));
+
     }
-    
+
     /**
      * Permet l'entrée des valeurs d'integer dans myArray par l'utilisateur.
+     *
      * @param array liste d'entiers.
      */
     public static void getValue(int[] array) {
