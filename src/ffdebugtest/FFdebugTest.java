@@ -3,13 +3,17 @@ package ffdebugtest;
 import java.util.Scanner;
 
 /**
- * Classe debug pour présenter NetBeans aux M1.
+ * Classe pour présenter NetBeans aux M1.
  *
  * @author Pierre
  */
 public class FFdebugTest {
-
+    
+    /**
+     * Liste de trois entiers à comparer.
+     */
     private int[] myArray;
+    
     private int myInt;
     private boolean myBoolean;
     private String myString;
@@ -27,6 +31,38 @@ public class FFdebugTest {
      */
     public FFdebugTest(int[] myArray) {
         this.myArray = myArray;
+    }
+
+    public int[] getMyArray() {
+        return myArray;
+    }
+
+    public void setMyArray(int[] myArray) {
+        this.myArray = myArray;
+    }
+
+    public int getMyInt() {
+        return myInt;
+    }
+
+    public void setMyInt(int myInt) {
+        this.myInt = myInt;
+    }
+
+    public boolean isMyBoolean() {
+        return myBoolean;
+    }
+
+    public void setMyBoolean(boolean myBoolean) {
+        this.myBoolean = myBoolean;
+    }
+
+    public String getMyString() {
+        return myString;
+    }
+
+    public void setMyString(String myString) {
+        this.myString = myString;
     }
 
     /**

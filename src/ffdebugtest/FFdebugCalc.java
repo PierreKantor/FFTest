@@ -1,7 +1,7 @@
 package ffdebugtest;
 
 /**
- * Classe Java contenant les méthodes de comparaison des entiers dans une liste.
+ * Classe contenant les méthodes de comparaison des entiers dans une liste.
  *
  * @author Pierre
  */
