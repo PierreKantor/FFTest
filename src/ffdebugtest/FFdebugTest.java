@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Classe pour présenter NetBeans aux M1.
- *
+ *  
  * @author Pierre
  */
 public class FFdebugTest {
