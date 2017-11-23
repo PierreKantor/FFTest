@@ -1,5 +1,6 @@
 package ffdebugtest;
 
+import monPackage.FFdebugCalc;
 import java.util.Scanner;
 
 /**
@@ -18,35 +19,12 @@ public class FFdebugTest {
     private boolean myBoolean;
     private String myString;
 
-    /**
-     * Constructeur pour la classe FFdebugTest.
-     */
-    public FFdebugTest() {
-    }
-
-    /**
-     * Second constructeur avec myArray en paramètre
-     *
-     * @param myArray liste de trois entiers.
-     */
-    public FFdebugTest(int[] myArray) {
-        this.myArray = myArray;
-    }
-
     public int[] getMyArray() {
         return myArray;
     }
 
-    public void setMyArray(int[] myArray) {
-        this.myArray = myArray;
-    }
-
     public int getMyInt() {
         return myInt;
-    }
-
-    public void setMyInt(int myInt) {
-        this.myInt = myInt;
     }
 
     public boolean isMyBoolean() {
@@ -65,6 +43,10 @@ public class FFdebugTest {
         this.myString = myString;
     }
 
+    public FFdebugTest(int[] myArray) {
+        this.myArray = myArray;
+    }
+    
     /**
      * Exécute les méthodes du programme.
      *
@@ -74,9 +56,8 @@ public class FFdebugTest {
         FFdebugTest debug = new FFdebugTest(new int[3]);
         FFdebugTest.getValue(debug.myArray);
         System.out.println("La plus grande valeur est : "
-                + FFdebugCalc.findMax(debug.myArray));
-        System.out.println("La plus petite valeur est : "
-                + FFdebugCalc.findMin(debug.myArray));
+                + FFdebugCalc.trouverMaximum(debug.myArray));
+        System.out.println(FFdebugCalc.findMin(debug.myArray));
     }
 
     /**

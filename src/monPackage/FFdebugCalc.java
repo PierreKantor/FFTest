@@ -1,4 +1,4 @@
-package ffdebugtest;
+package monPackage;
 
 /**
  * Classe contenant les méthodes de comparaison des entiers dans une liste.
@@ -7,13 +7,12 @@ package ffdebugtest;
  */
 public class FFdebugCalc {
 
-    /**
-     * Trouve l'integer le plus grand dans une liste d'integer.
-     *
-     * @param array liste d'integer.
-     * @return integer le plus grand contenu dans la liste.
-     */
-    public static int findMax(int[] array) {
+/**
+ * This is a method
+ * @param array this is an array 
+ * @return give the max value 
+ */
+    public static int trouverMaximum(int[] array) {
         int max = array[0];
         for (int i = 0; i < array.length; i++) {
             if (array[i] > max) {
